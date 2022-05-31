@@ -1,0 +1,168 @@
+/* bagian umum */
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0%;
+}
+h2, h4{
+    color: #a5a76e;
+}
+p{
+    color: rgb(173, 157, 157);
+    font-family: serif;
+    text-align: justify;
+    line-height: 1.5;
+   
+}
+
+
+#letter-spacing{
+    letter-spacing: 4px;
+}
+.card{
+   box-shadow: 0 4px 8px 0 #8a8771;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+   
+}
+/* bagian header */
+header{
+    display: inline;
+}
+.jumbotron {
+    font-size: 20px;
+    padding: 30px;
+    background-color: #DAD5AB;
+    background-image: repeating-linear-gradient(  #C3BA85, #DAD5AB);
+    text-align: center;
+    color: white;
+ }
+ .jumbotron p{
+    color: rgb(173, 157, 157);
+    font-family: serif;
+    text-align: center;
+ }
+ h1{
+     text-shadow: 3px 3px rgb(177, 154, 154);
+ }
+ nav li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 30px;
+ }
+ nav {
+    background-color: #F0F0CB;
+    padding: 3px;
+    position: sticky;
+    top: 0;
+ }
+ nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #C3BA85;
+ }
+ nav ul li a:hover{
+     font-weight: bold;
+     color: white;
+ }
+ /* bagian content */
+ main{
+    padding: 20px;
+    overflow: auto;
+
+ }
+ .content {
+     float: left;
+     width: 70%;
+     padding: 10px;
+
+ }
+
+ .featured-image{
+        width: 100%;
+        max-height: 450px;
+        object-fit: cover;
+        object-position: center;
+        transition: transform .2s;
+        border-radius: 5px;
+}
+.featured-image:hover{
+    transform: scale(1.1);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+ol li{
+    color: rgb(173, 157, 157);
+    font-family: serif;
+    text-align: justify;
+    line-height: 2;
+    
+}
+blockquote{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;   
+    font-size: 18px;
+}
+img{
+    width: 50%;
+    max-height: 500px;
+    object-fit: cover;
+    object-position: center;
+    transition: transform .2s;
+    border-radius: 5px;
+}
+img:hover{
+    transform: scale(1.1);
+}
+
+figure img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+
+.profile {
+    text-align: center;
+}
+aside section{
+    text-align: left;
+}
+
+aside{
+    float: right;
+    width: 30%;
+    padding: 10px;
+}
+
+footer {
+    padding: 10px;
+    background-color:#F0F0CB;
+
+}
+footer p {
+    font-size: 14px;
+    text-align: center;
+    font-weight: bold;
+    color: #C3BA85
+}
+
+@media screen and (max-width: 1000px) {
+    .content,
+    aside{
+        width: 100%;
+        padding: 0;
+    }
+    
+}
+
